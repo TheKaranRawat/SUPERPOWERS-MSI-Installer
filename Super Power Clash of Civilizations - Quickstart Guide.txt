@@ -1,0 +1,983 @@
+super power: clash of civilizations 
+(beta)
+quickstart guide (v1.0)
+
+
+author: lincoln_lyf 
+
+
+Table of Contents
+1. Terms & Policy
+2. Features of This Mod
+3. Installation
+4. Mod Mechanism: General
+4-1. Eras & Tech Tree & Policy Tree
+4-2. Maps & Resources
+4-3. Manpower 
+4-4. Consumer Goods
+4-5. Electricity
+4-6. AI & City-states
+5. Mod Mechanism: Development
+5-1. Corruption & Public Security 
+5-2. City Population Size
+5-3. Immigration
+5-4. Upgradable Specialists System
+5-5. Water Plot Improvements & Terrain Modification
+5-6. Orbital Satellites
+6. Mod Mechanism: Combat
+6-1. Two-Unit-Per-Plot Combat System
+6-2. Militia & Specialized Military Units
+6-3. Elite Units & Experiential Units
+6-4. War Casualties 
+6-5 Nuclear Winter
+7. Automated Management & Batch Operations
+7-1. Automated Cities & Unit Group Control
+7-2. Batch Operations for Production and Unit Commands
+8. Known Bugs & Future Plans
+9. Special Thanks
+
+1. Terms & Policy
+
+Usage Terms:
+No guarantees, no warranty. 
+This mods are provided "as is" with no express or implied warranty for accuracy or suitability. The user assumes all responsibility for use, and all possible problems related.
+The author shall not be responsible for any physical or mental loss of any kind whatsoever in any way arising from or relating to the use of these mods. Even you have clear evidence it is caused by this mod.
+Usage of these mods implies acceptance of these terms. Even you don’t read it at all.
+If you do not agree to these terms, do not use this mod.
+
+Fair Usage Policy: 
+This mod is free to download and play it for your own personal use or give it to your friends. 
+You are not allowed to make any financial gain from this mod. It is illegal.
+You are free and welcome to use any part of this mod and incorporate it into your works.  However you must give the credit and you must not make any financial gain form your works.
+
+(Thanks whoward69 for this Usage Terms and Fair Usage Policy template)
+
+
+
+
+2. Features of This Mod
+
+> Missions & design concepts:
+Super Power: Clash of Civilizations is a Total Conversion Mod of Sid Meier's Civilization V for a better late game experience and realistic modern warfare. 
+
+This is a challenging mod with more complicated systems and advanced difficulties, not an easy mod for “simple fun”. It is highly recommended that the player have a good understanding of the mechanisms of Civilization V.
+
+The current is a Beta version. Bugs reports and balance suggestions are welcome.
+
+> The Relationship with Super Power Modpack:
+
+Super Power: Clash of Civilizations (SP:CoC) is a fully upgraded version of Super Power Modpack (SP), a total conversion mod of Sid Meier's Civilization V. The latest version is v5.1.
+
+You can regard SP:CoC as SP 6.0. However, SP:CoC is a total conversion of SP itself, which is designed to bring a completely new game experience rather than an improvement of the original game. SP:CoC does NOT support previous saved games of any Super Power Modpack version.
+
+SP:CoC is currently under Beta testing and the current version is 5.7. The final version will be 6.0. However, the current version v5.7 has all game concepts if the final version. There will only be bug fixes and minor balance tweak in the future. 
+
+> New Features:
+
+(1) Exciting late game experience:
+? 4 unique components for all 43 Civs: Many modern units and buildings
+   ? A fully new designed Tech Tree with two new eras: World War Era and Future Era 
+   ? A fully new designed Policy Tree and Ideologies
+   ? Plain water plots can be improved
+   ? Strong terrain modification abilities in the late game
+   ? Space race: launching orbital satellites for global effects 
+? More challenges in the late game from enhanced AI and increasing maintenance cost of your nation
+
+(2) Realistic and challenging domestic affairs:
+? 200+ new buildings, wonders and improvements
+? Cities will have corruption & public Security issues
+? Cities will upgrade by reaching higher population levels, unlocking advanced buildings, wider working distance, but causing pollution and traffic problems 
+? New Strategic Resources with global effects: Manpower, Consumer Goods, Electricity
+? Move your capital to a new place for a better efficiency
+? Move your population inside your cities for a better efficiency
+? Nations with a higher Tourism Output will attract international immigrants from other countries 
+? Happiness will be more important: affecting tourism output and international immigration 
+
+(3) Enhanced Combat system and ultimate modern warfare:
+? 2-unit-per-plot system for units’ coordination operations and larger battle scale 
+? 100+ new units and promotions
+? Highly specialized military units with diverse abilities and cost
+? Realistic naval units and air units design, powerful but expensive
+? Unique legendary elite & experimental units in real history await you command 
+? Workers can turn into militia units for war mobilization or logistics service
+? War is dangerous: intensive war will cause population loss and even nuclear winters. 
+
+(4) Comfortable & time-saving game experience
+? Fully tweaked game balance: no “weak” civilizations, policies, wonders, units, etc 
+? Adaptive difficulty level: AI’s bonus depend on your performance
+? Rapid & compact game pace with zero “garbage time”
+? Automated Management & Batch Operations: control hundreds of cities or units in one-click
+
+3. Installation
+
+> System Requirements:
+Your computer should be better than the “Recommended System Requirements” of Civilization V: Brave New World (BNW)
+* Operating System: Windows? 7/8/10
+* Processor: 2.4 GHz Quad Core CPU.
+* Memory: 6 GB RAM.
+* Hard Disk Space: 8 GB Free.
+* Video: 512 MB ATI 4800 series or better, 512 MB nVidia 9800 series or better.
+
+Windows XP is NO LONGER compatible due to its supporting DLL: DLL - Various Mod Components by whoward69
+Mac is NOT compatible currently. 
+
+
+> Game Requirements:
+You must have the latest version of BNW (v1.0.3.279 or v1.0.3.276) to run this mod without compatible issues. BNW versions earlier than v1.0.3.144 are NO LONGER compatible.
+
+
+> DLC Requirements:
+You must have ALL of these DLCs installed to avoid “error loading font xml” issues (the game may still run without CTD but some models or textures will be missing).
+* Gods & Kings
+* Brave New World
+* Civilization and Scenario Pack: Korea
+
+
+> Mod Compatibility:
+Unfortunately, this is a Total Conversion Mod so it is NOT compatible with all kinds of total conversion mods or any mods changing the game balance or mechanism. 
+These mods are tested to be fully compatible;
+* Ingame Editor (IGE)  by DonQuiche
+* Custom Advanced Setup Screen by Gedemon
+* R.E.D. Modpack  by Gedemon
+* Quick Turns  by gunstarpl
+* InfoAddict  by robk
+* More Great Works  by Loren Sandboe (Qoma)
+* Music Changer  by Richard Corr
+* CameraRotation (BNW)  by alpaca, heinous_hat
+
+These mods are NOT compatible 
+* Any DLL MODs except DLL - Various Mod Components by whoward69
+* Any MODs changing these Lua files: TopPanel, CultureOverview, UnitPanel , EnemyUnitPanel, ResourceIconManager, InfoTooltipInclude, UnitFlagManager, CityView, CityBannerManager, PuppetCityPopup , AnnexCityPopup, NewEraPopup, CivilopediaScreen
+* The “Earth Map” come with BNW: may cause lacking resources issues.
+
+These mods can be compatible by modifying conflicting files:
+
+* Enhanced User Interface(EUI)  by bc1:  Sp:Coc has already integrated some EUI elements. You must removing these Lua files from the EUI folder : TopPanel, CultureOverview, UnitPanel , EnemyUnitPanel, ResourceIconManager, InfoTooltipInclude, UnitFlagManager, CityView, CityBannerManager, PuppetCityPopup , AnnexCityPopup, NewEraPopup, CivilopediaScreen
+* New Civilizations mod: Compatible but civilizations with only 2 unique components may cause balance problems. 
+* YnAEMP  by Gedemon: If you want to play with 34 civilizations, you must use Various DLL mod components - 34 Civs by whoward69 instead: http://www.picknmixmods.com/mods/CivV/DLL/Various%20Mod%20Components%20-%2034%20Civs.html# 
+
+
+
+
+> Installation Guide:
+
+* Important Note: This MOD requires DLL - Various Mod Components by whoward69 for DLL support. You must install and load DLL - Various Mod Components before using this MOD. Otherwise grievous errors may occur.
+
+* Steam:
+(1) Subscribe SP:CoC on STEAM
+(2) Go to WHoward's Pick'N'Mix Mods to download the latest DLL - Various Mod Components (v 88) http://www.picknmixmods.com/mods/CivV/DLL/Various%20Mod%20Components.html 
+(3) Move the DLL - Various Mod Components (v 88).civ5mod you’ve just downloaded, to My Games\Sid Meier's Civilization 5\MODS\
+
+* Manual Installation (Unpacked Version): 
+(1) Download the “Super Power Clash of Civilizations .RAR” from given file transfer sites
+(2) Extract the “Super Power Clash of Civilizations .RAR”, you will find two folders: “Super Power Clash of Civilizations (v 6)” and DLL - Various Mod Components (v 88).
+(3) Move them to My Games\Sid Meier's Civilization 5\MODS\ 
+
+
+> Loading in game:
+
+* Start a new game/play a new scenario:
+(1) Start the game, click “MODS”. 
+(2) In the mod lists, find DLL - Various Mod Components (v 88) then check the mark on the right.
+(3) Find Super Power: Clash of Civilizations(v 6) then check the mark on the right.
+(4) If you want to load other mods together, such as IGE, check them all.
+(5) Click “NEXT” on the lower right corner.
+(6) Click “Single Player”. If you also load Custom Advanced Setup Screen together, you are allowed to click “Multiplayer” to play a multiplayer or a hot seat game.
+(7) Click “Custom Game” and enter the “Custom Game” Menu.
+(8) Click “Super Power Modded Single Player Game (Beta)” and start you journey!
+(9) If you want to play a scenario, such as using real start positions in Earth map, click the “Load Scenario” after you selected the map.
+
+* Load a saved modded game
+(1) Start the game, click “MODS”. 
+(2) Load DLL - Various Mod Components (v 88) and Super Power: Clash of Civilizations(v 6)
+(3) Click “NEXT” on the lower right corner.
+(4) Click “Single Player”.
+(5) Click “Load game” and choose the saved game.
+(6) DO NOT directly load your saved modded game in the main menu, the mods in use may not be loaded correctly. 
+
+
+
+
+4. Mod Mechanism: General
+
+   4-1. Eras & Tech Tree & Policy Tree
+* There are 10 Eras in total:
+Ancient – Classic – Mediaeval – Renaissance – Industrial – Modern – World War – Atomic – Information – Future
+* The Tech Tree is much longer than BNW, and the relationships between different Techs are closer. 
+* Early technologies costs are reduced to shorten the length of early-game to spare you more time and energy for the late-game performance and modern warfare.
+* However, if you prefer early-game experience, you may choose Epic Speed or Marathon Speed.
+* Each civilization starts with a free technology according to its unique characteristics: 
+(1) Agricultural civilizations (China, India, etc.) start with Agriculture. 
+(2) Nomadic civilizations (Mongol, Hun, etc.) start with Hunting. 
+(3) Naval civilizations (England, Japan, etc.) start with Fishery.
+
+* Tech Details
+(1) Obsolete Buildings & Historic Buildings
+* Some Techs will cause certain buildings in your cities become obsolete. They will no longer be allowed to build and their bonuses will be lost. 
+* When you discovered that technology, your city will automatically build an upgraded version of that obsolete building with no extra cost. 
+* The old building won’t be removed but become historical buildings.
+* After you have further Techs, those historical buildings will offer additional Tourism output.
+* Most unique buildings never become obsolete.
+
+For Example: The Aqueduct will be obsolete after you discover Urbanization in the modern era and its upgraded version: Tap Water System will be built instantly. After you discover Internet, the old Aqueduct will offer +2 Tourism. 
+   
+(2) Railroad auto replacement
+* After discovering Railroad, all roads inside your border will be replaced by railroad automatically to save you some time and energy. 
+* Roads won’t become obsolete, your worker can still build roads if you want.
+
+(3) Some Techs will improve the civilian’s movement and Workers building speed. 
+
+* The Policy Tree is fully redesigned. Each policy branch has 1-2 new policy available.
+* Traditional and Liberty are considered as “Ancient Ideologies”. They have many powerful policies and will make big difference for your Civ’s early development. However they cannot coexist.
+* Ideologies can no longer unlocked by building 3 factories but can only by entering the Modern Era. 
+* Most ideology tenets cannot bring their potentialities into full play until entering the late game. No need to rush!
+
+
+   4-2. Maps & Resources
+
+* The minimum distance between cities increased from 3 to 4. 
+* The maximum working distance for citizens increased from 3 to 5. The default working distance is still 3, but the city will unlock further working range by reaching higher population size levels.
+* It is highly recommended that you play this mod using larger maps (large or huge) to have a better game experience and AI performance.
+* It is also highly recommended that you play this mod with maps with more ocean areas, such as “continents” to have a better late game experience for many new naval element and modern naval battles. 
+
+* Strategic resources are much more useful: Iron and horse will still widely used in the late game for building units or happiness buildings. 
+* Luxury resources details:
+(1) There are 10+ new luxury resources added to this mod from More Luxuries MOD by Barathor
+(2) Luxury resources offer different Food, Production or Gold output and Happiness. Luxury resources with lower Happiness will provide higher Food, Production or Gold output while higher Happiness, lower output.
+(3) You will get 1 extra happiness for every two different Luxury resources in all difficulty levels.
+
+   4-3. Manpower
+* Military units and world wonders require a certain amount of Manpower to maintain. 
+
+* If you have abundant Manpower (more than 25), the Gold cost for purchasing units and buildings will be reduced due to the lower cost of labor value (maximum -35%, can multiply with other effects). 
+* Check the “Gold Status” on the Top Panel to see the current discount of purchasing units and buildings brought by abundant manpower.
+* If the amount of Manpower is changed, it will affect the discount in the next turn.
+
+* Cities will provide lots of Manpower, which is its main source. Cities with larger population sizes will provide more Manpower.
+* Engineer specialists in your cities will produce a small amount of Manpower. (+2 Manpower per Engineer)
+* Some buildings will provide a small amount of Consumer Goods on their own.
+* You may also acquire Manpower from other civilizations by trading or allied city-states.
+
+
+   4-4. Consumer Goods
+* Your people are not statistics, they will consume a certain amount of consumer product in their daily lives. As a result, Consumer Goods are very important. 
+
+* Cities will consume Consumer Goods. Larger cities and cities further away from your Capital will consume more Consumer Goods.
+* International Trade Units and Settlers also need a certain amount of Consumer Goods to be trained.
+
+* Like Manpower, the amount of Consumer Goods you own will affect the global Happiness of your nation directly by percentage 
+* If the number of Consumer Goods is negative (lower than 0), your people will be very unhappy due to unable to purchase their daily products and cause huge unhappiness penalty by percentage (from +5% Unhappiness to +50% Unhappiness) according to the total number of cities you own. You will receive a warning before the Unhappiness outbreaks. 
+* On the contrary, if you have abundant Consumer Goods (more than 25), the total unhappiness of your nation will decrease by percentage (maximum -50% Unhappiness). What's more, you will also receive a bonus for the income of trade routes (maximum +50%, can multiply with other effects). Both positive effects are scaled according to the total number of cities you own.
+* Check the “Happiness Status” on the Top Panel to see the current Happiness influenced by the amount of Consumer Goods.
+* If the amount of Consumer Goods is changed, it will affect the Happiness in the next turn.
+
+* Merchant specialists in your cities will produce lots of Consumer Goods, which is its main source. (+4 Consumer Goods per Merchant, upgradable by certain policies)
+* Some buildings will provide a small amount of Consumer Goods on their own.
+* You may also acquire Consumer Goods from other civilizations by trading or allied city-states.
+* If your Consumer Goods is less than 0, your citizens will automatically go into available merchant slots to provide additional Consumer Goods in cities where “Manual Specialist Control” is disabled. 
+
+
+   4-5. Electricity
+* After entering the Modern Era, the Electricity System will be functional. Electricity is a very important resource in the late-game. A modern civilization cannot survive without enough power supply.
+
+* Almost every post-industrial building requires a certain amount of Electricity to be built. Also, cities will consume Electricity and large cities will consume more.
+
+* If the number of Electricity is negative (lower than 0), you will receive Production and Science penalty by percentage (maximum -50% Production and Science output nationwide) according to the total number of cities you own.
+* On the contrary, if you have abundant Electricity (more than 25), you will receive Production and Science bonus by percentage (maximum +50%) according to the total number of cities you own.
+* Check the “Science Status” on the Top Panel to see the current bonus or penalty influenced by the amount of Electricity.
+
+* You can see the current Electricity amount after discovering the Electricity technology. It must be negative – but don’t get panic, it won’t cause problems until you entering the Modern Era. You should have plenty of time to build enough Power Plants to fill the energy gap during the Industrial Era.
+* Power Plants buildings is the only source of Electricity. Be aware that most of the Power Plants buildings will cause Pollution to the city which slow down the population growth.
+* You may also acquire Electricity from other civilizations by trading or allied city-states.
+
+
+   4-6. AI & City-states
+
+* AI’s bonus in high difficulty levels are depended on your performance in the game.
+* AI NEVER gets free Techs in all difficulty levels. However, AI will get more and more food growth, science, culture, production and spy bonus, or even free Techs and policies discount every time the human player enter a new era or capturing new cities.
+* AI have less hostility against warmongers in the early game but will be much more aggressive after entering the World War Era.
+
+* Each allied city-states can offer you 4 Horses, Iron, Coal, Oil, Aluminum. Even they don’t have such resources. Try to make good relationship with city-states when the map lack such resources! 
+* Dollar diplomacy is less effective for buying out city-states. The default Gold gift is only 50% effective than BNW. However you can increase its effect by unlocking policies in Patronage.
+* Missions offered by city-states can add 100%-200% relationships than BNW. So you should keep an eye out for city-states’ missions if you want to form an alliance. 
+* City-states can only build a limited number of unit (for a faster turn processing and avoiding traffic jams) so they are very fragile when attacked by major Civs. Thus, you should send them military units as gift more often. Your unit travels to the city-state in only one turn, which means you can send a city-state one unit per turn. 
+
+
+
+
+
+
+5. Mod Mechanism: Development
+
+   5-1. Corruption & Public Security 
+* The cause of corruption and public security issues:
+The corruption and public security condition in a city are determined by the distance between the city and your Capital. 
+
+If the city is too far from your Capital it will require more Consumer Goods and suffer from corruption and public security problems, which will cause additional Unhappiness and increase the Culture Cost for applying new Policies.
+
+Thus, cities in this mod will NOT cause the same value of Unhappiness and Culture Cost for applying new Policies.
+
+* City Hall Level:
+Each non-capital annexed city you own has a special building: City Hall, representing your local government. The City Hall Levels indicate this city's corruption and public security condition.
+
+Note: 
+D = Number of plots between this city and your Capital
+M = Number of plots of map width
+
+(1) City Level Lv1: (D < 7) 
+* -2 Gold for Maintenance
+* -2 Consumer Goods
+* +2 extra Unhappiness
+* +4 Manpower
+* +5% Culture cost for new Policies 
+
+(2) City Level Lv2: (D <M/8, 14 at least)
+* -4 Gold for Maintenance
+* -4 Consumer Goods 
+* +4 extra Unhappiness, +1% global Unhappiness
+* +3 Manpower
+* +10% Culture cost for new Policies 
+(3) City Level Lv3: (D <M/5, 26 at least)
+* -8 Gold for Maintenance
+* -8 Consumer Goods 
+* +6 extra Unhappiness, +2% global Unhappiness
+* +2 Manpower
+* +20% Culture cost for new Policies 
+
+(4) City Level Lv4: (D <M/3, 36 at least)
+* -16 Gold for Maintenance
+* -12 Consumer Goods 
+* +8 extra Unhappiness, +3% global Unhappiness
+* +1 Manpower
+* +33% Culture cost for new Policies 
+
+(5) City Level Lv5: (D >=M/3)
+* -24 Gold for Maintenance
+* -16 Consumer Goods 
+* +10 extra Unhappiness, +3% global Unhappiness
+* No Manpower 
+* +33% Culture cost for new Policies 
+
+The City Hall Building is shown on the upper left corner (wide screen) or the upper right corner (normal screen) inside your city view screen. You can also see the City Hall Level under the city’s banner on the map. 
+
+* Turn an annexed city into a puppet city:
+You can turn any non-capital annexed city into a puppet city anytime, even this city is built by yourself. 
+
+Simply sell the City Hall Building by clicking the icon. The city will become a puppet but suffer a Resistance Time (equals 50% of its Population).
+
+Puppet city:
+* No Gold for Maintenance
+* -4 Consumer Goods 
+* No extra Unhappiness
+* No Manpower 
+* No Culture cost for new Policies 
+* -33% Culture and Science output
+* -50% Food growth
+
+* How to solve corruption and public security issues:
+(1) Build Anti-corruption and Public Security Buildings (names in brown color) in the city to reduce the corruption and public security problems. Each city of different City Hall level has its unique Anti-corruption and Public Security Building.
+
+Anti-corruption and Public Security Buildings are unlocked by certain Technologies. So please do not extend too far in early game!
+
+(2) Sell the City Hall to make the city a puppet city. You can wait until you are able to pay the maintenance cost of Gold, Happiness and Culture or the certain buildings are unlocked to re-annex them. 
+
+(3) Some traits, policies and Ideology tenets can reduce nationwide corruption and public security issues. 
+
+
+   5-2. City Population Size
+* Cities are classified into different “population size levels” according to their current population. 
+* Cities with a larger population size will have more HPs, increase the citizens working distance, unlock advanced buildings, provide more Manpower, and offer International Trading Income bonus and Tourism boost. 
+* However, cities with a larger population size will consume more Electricity and Consumer Goods, cause pollution and traffic problems, which bringing additional Unhappiness, reducing Food Growth, even extra Culture cost for future policies. 
+* Larger cities are very useful, but please make sure your economy and infrastructure is strong enough to maintain larger cities. 
+
+* Population SIize details:
+
+P = Population in this city
+
+(1) Town (P <= 5)
+* Citizens' Working Range: 3 Hexes
+* 100 HP (Base)
+* 5 City Combat Strength (Base)
+* +3 Manpower
+* -3 Electricity
+* -3 Consumer Goods
+* No Traffic and Pollution Problems
+
+(2) Small City (P: 5~14)
+* Citizens' Working Range: 4 Hexes
+* +50 HP
+* +5 City Combat Strength
+* +6 Manpower
+* + 2 International Trade Route Gold income
+* -6 Electricity
+* -6 Consumer Goods
+* No Traffic and Pollution Problems
+
+(3) Medium City (P: 15~25)
+* Citizens' Working Range: 4 Hexes
+* +50 HP
+* +5 City Combat Strength
+* +12 Manpower
+* + 4 International Trade Route Gold income
+* -12 Electricity
+* -12 Consumer Goods
+* +2 Unhappiness for Traffic and Pollution Problems
+
+(4) Large City (P: 26~39)
+* Citizens' Working Range: 4 Hexes
+* +100 HP
+* +10 City Combat Strength
+* + 8 International Trade Route Gold income
+* +24 Manpower
+* -24 Electricity
+* -24 Consumer Goods
+* -5% Food Growth for Traffic and Pollution Problems
+* +4 Unhappiness for Traffic and Pollution Problems
+
+(5) XL City (P: 26~39)
+* Citizens' Working Range: 5 Hexes
+* +100 HP
+* +15 City Combat Strength
+* + 16 International Trade Route Gold income
+* +25% Tourism Output 
+* +36 Manpower
+* -36 Electricity
+* -36 Consumer Goods
+* -10% Food Growth for Traffic and Pollution Problems
+* +6 Unhappiness for Traffic and Pollution Problems
+
+(6) XXL City (P: 40~79)
+* Citizens' Working Range: 5 Hexes
+* +100 HP
+* +25 City Combat Strength
+* + 24 International Trade Route Gold income
+* +50% Tourism Output 
+* +54 Manpower
+* -54 Electricity
+* -54 Consumer Goods
+* -20% Food Growth for Traffic and Pollution Problems
+* +10 Unhappiness for Traffic and Pollution Problems
+* +5% Culture Cost for future policies 
+
+(7) Global City (P>=80)
+* Citizens' Working Range: 5 Hexes
+* +100 HP
+* +50 City Combat Strength
+* + 32 International Trade Route Gold income
+* +100% Tourism Output 
+* +72 Manpower
+* -72 Electricity
+* -72 Consumer Goods
+* -33% Food Growth for Traffic and Pollution Problems
+* +16 Unhappiness for Traffic and Pollution Problems
+* +10% Culture Cost for future policies 
+
+The current City Population Size level is shown on the upper left corner (wide screen) or the upper right corner (normal screen) inside your city view screen (the same position with the City Hall Building). You can also see the City Population Size Level under the city’s banner on the map.
+
+
+   5-3. Immigration
+* Citizens can move to another city or even to a foreign country by the call of the nation or just for a better life. 
+
+* Inner Immigration
+You are allowed to "move" the population between cities to increase the quality of your population. For example, you can move those people from poor and distant countryside to large cities to receive education or find a better job. On the other hand, you can move people out of over-crowded cities to support other developing cities.
+
+(1) The Settler unit
+* Exactly speaking, the "Settler" is made up of one Citizen in the city where it is trained. It will also cause 2 Unhappiness and consumers 1 Consumer Goods.
+* Training a Settler Unit will consume one Citizen in the current city, but Growth of the City will NOT stop. Settler cannot be purchased. 
+* Settler takes damage if ends turn in outside friendly territory. 
+* If a Settler is captured by enemy combat units, it will be KILLED.
+
+(2) Settler join the existing city
+* For inner immigration, just simply move the Settler into the city you wish it to join and click "Move into the City". The Settler Unit will disappear and the Population of the city will increase by 1. 
+* The city’s Food Growth meter will be cleared to zero after a Settler’s moving in. Thus inner immigration will slow down the natural population growth of the city.
+* The Settler cannot move into a City currently in resistance or being razed.
+
+
+* International Immigration
+Citizens will move to other nations with higher influence to seek a dream life. If you have considerable Tourism output, it is a safe, effortless and peaceful way to “steal” population from your opponents by international immigration. On the other hand, if you fail to counter other nation’s cultural invasion, your people will vote with their feet.
+
+(1) The cause of International Immigration
+The International Immigration is determined by the Influence level, Happiness and the diplomacy condition between two Civs. 
+
+(2) The mechanism of International Immigration
+The speed of International Immigration is based on the Move-in Rate and Move-out Rate. You can check the Move-in Rate and Move-out Rate in the Tourism & Culture Overview screen, under “Culture Victory”. 
+
+* The Move-in Rate represents how attractive your country is to their people. Its value is based on your influence level to the other Civ:
+NONE: 0
+EXOTIC: 1
+FAMILIAR: 2 
+POPULAR: 3
+INFLUENTIAL: 4
+DOMINANT: 5
+* The Move-out Rate is just the opposite, representing how attractive the other country is to your people. 
+
+* If the Move-in Rate is 4 or above and is larger than the Move-out Rate, the people in the certain country will migrate to your country by 1 per turn. It will move to one of your annexed cities without unemployed citizens or starvation. 
+* If the Move-out Rate is 4 or above and is larger than the Move-in Rate, your people will migrate to the other country by 1 per turn, which means a random city of yours will lose 1 citizen.
+
+(3) Happiness & Resources
+Move-in Rate and Move-out Rate are also greatly affected by Happiness.
+
+H =Current Excess Happiness
+MIR = Move-in Rate
+MOR = Move-out Rate
+
+* H > 150:  MIR+50%, MOR-50%
+* 100 <H<=150:  MIR+25%, MOR-25%
+* 50<H<=100: No effect
+* 20<H<=50:  MOR+25%
+* 0<=H<20: MIR-25%, MOR+25%
+* H<0: No immigrant move in, MOR+50%
+
+What’s more, the amount of excess Happiness will also scale up your current Tourism output by percentage according to the total number of your cities. Therefore, Happiness is imprtant for attracting Immigrants. 
+
+TBP = Tourism Bonus by Percentage
+n = Total number of your cities
+
+* TBP = H/n
+
+
+If you currently have less than 0 Consumer Goods or Electricity (after entering the Modern Era), no immigrant can move in regardless of all other conditions. 
+ 
+
+(4) Diplomacy Conditions and Policies
+Move-in Rate and Move-out Rate are also affected by the Diplomacy Conditions between two Civs.
+
+* You open border to another Civ:  MIR+100%
+* The other Civ open border to you:  MOR+100%
+* Accept your religion:  MIR+100%
+* Accept their religion:  MOR+100%
+* Declaration of friendship:  MIR+50%, MOR+50%
+* Denouncing you or by denounced by you: MIR+50%, MOR+50%
+* At war: No International Immigration! 
+
+A few policies can also affect the Move-in Rate and Move-out Rate
+* Freedom - Freedom of Speech :  MIR+50%
+* Order – Iron Curtain: 	MOR-50%
+
+
+   5-4. Upgradable Specialists System
+   
+* The output of any kind of specialist can be “upgrade” by building certain Specialists Foundation Buildings in your cities. They are national wonders so you can only have one of each in your country. Their construction cost goes up the more cities there are in the empire.
+* Specialists Foundation Buildings are not unlocked by Techs, but by city Population Size levels.
+* Be aware that some upgraded specialists offer higher output but demand a certain amount of Gold for maintenance cost. 
+
+* Specialists Foundation Buildings Details:
+(1) Lv1 Foundations: Must be built in Medium cities (Population >=15)
+* Science Foundation (Lv1):  Every Scientist +2 Science, -2 Gold for research funds
+* Engineering Association (Lv1):  Every Engineer +2 Production, -2 Gold for facility funds
+* Art Foundation (Lv1):  Every Artist, Writer, Musician +1 Culture, -2 Gold for sponsor funds.
+* Commercial Guild (Lv1):  Every Merchant +2 Gold
+
+(2) Lv2 Foundations: Must be built in XL cities (Population >=40)
+* Science Foundation (Lv2):  Every Scientist +2 Science, -2 Gold for research funds
+* Engineering Association (Lv2):  Every Engineer +2 Production, -2 Gold for facility funds
+* Art Foundation (Lv2):  Every Artist, Writer, Musician +1 Culture, -2 Gold for sponsor funds.
+* Commercial Guild (Lv2):  Every Merchant +1 Food
+
+(3) Lv3 Foundations: Must be built in Global cities (Population >=80)
+* Science Foundation (Lv3):  Every Scientist +2 Science, -2 Gold for research funds
+* Engineering Association (Lv3):  Every Engineer +2 Production, -2 Gold for facility funds
+* Art Foundation (Lv3):  Every Artist, Writer, Musician +1 Culture, -2 Gold for sponsor funds.
+* Commercial Guild (Lv3):  Every Merchant +1 Food
+
+* You should also notice that unemployed citizen cannot offer any output but only waste your food. If your city is overcrowded, you should use Settler to move out citizens to other cities to find better job for them.
+* If a city has an unemployed citizen, there will be a “sad face” icon shown on the city’s banner in the map to let you know.
+
+
+   5-5. Water Plot Improvements & Terrain Modification
+* Water Plot Improvements:
+You are allowed to build improvements on a water plot even there is no resource, to improve its Food or Production yield. Thus, coastal cities will become your major economy center in the mid-game and the late-game. 
+
+(1) Fish Farming
+* Unlocked by Optics.
+* Breed a fish resource on costal tiles without resources to increase the city's Food output.
+* May only be constructed in a coastal tile without resources.
+* May not be constructed adjacent to another tile is currently under fish farming.
+
+(2) Natural Gas Drilling
+* Unlocked by Telegraph.
+* Drill out a natural gas resource on ocean tiles without resources to improve it and increase the city's Production output.
+* May only be constructed in a ocean tile without resources.
+* May not be constructed adjacent to another tile is currently under natural gas drilling.
+
+* Be Aware that there is no Workboat in this mod. Water improvements can be built by embarked workers.
+
+* Terrain Modification:
+After discovering certain Tech, you are allowed to build some special improvments to modify the terrain as you wish for traffic or improve the city’s output.
+
+(1) Naval Port:  allows any naval unit to enter the land tile where it is built. So it can be severed as a "canal" if built on the "Continental Bridge". 
+(2) Pontoon Bridge:  allows land units to cross a single coastal tile without embarking.
+(3) Forest Restoration:  Plant trees on this tile to create a Forest.
+(4) Jungle Restoration:  Plant trees on this tile to create a Jungle.
+(5) Mountain Quarrying:  Transform the Mountain to a Hill and a Stone resource will appear on the hill. This action cannot undo.
+(6) Break Ice:  Clear the Ice on this tile to allow other naval units to pass. This action cannot undo.
+
+   
+5-6. Orbital Satellites
+   
+* After finishing the Apollo Program, you are allowed to build Satellite Units in cities built with a Spaceship Factory. 
+* Satellite Units are special late-game units. Those units function as Wonders, which can offer their unique global effects. Some of them can only provide bonus for their launchers while others give bonus to all existing civilizations. 
+* They are very helpful to speed up your victory process, especially for a Science Victory. However you should be aware that some Satellite Units with global effects may also help your opponents to catch up with you.
+
+* Satellite Units are like Wonders. They are unique and only one of each kind can exist in the world. If one civilization successfully build out one Satellite Unit, all other civilizations are no longer able to build it.
+* Satellite Units must be Launched to be functional, like in Civilization: Beyond Earth. You can launch those Satellite Units simply by moving them to your Capital and press the "Launch Satellite" button in the unit command panel.
+   
+
+
+6. Mod Mechanism: Combat
+   
+   6-1. Two-Unit-Per-Plot Combat System
+* In this mod, each plot can stack up to two land or naval unit of the same property.
+(1) Two military units of the same domain. 
+(2) Two civilian units or embarked land units.
+(3) In extreme cases, a water plot can stack up to six units: 2 naval unit + 2 hovering unit (helicopters) + 2 embarked land units. 
+
+* Stacking Units Combat:
+(1) Stacked units Attacking. As normal, just click and attack! 
+(2) Stacked units Defending. When attacked, the best defending unit - who has the comparatively highest combat strength (not the absolute combat strength) - will take the damage.
+(3) Stacked unit Penalties: stacked units are not invincible. Many units can cause Collateral Damage or Charge Damage to attack or even kill all units in one plot in one shot.
+(4) Two-Unit-Per-Plot doesn’t mean you can “mindlessly” put units together. You must know the units well and put the right units together. In most cases, it is wise to stack a melee unit with a ranged unit. The melee unit can offer protection while the ranged unit provides fire support.
+
+* Healing and Supply
+(1) All units can no longer heal outside the friendly territory. You can only let them heal by keeping logistical units can offer the Medic and Supply Promotion in your formation.
+(2) For land units, the militia units can serve as logistical units. While Great Admiral and Carriers can do the naval logistical task and let your naval units heal even outside the friendly territory.
+
+* Movement Rules
+(1) Land unit will only cost ONE MP to disembark from the water plot (like the original Danish Trait).
+(2) Land unit will only cost 5 MPs to cross a river. However it will suffer -33% combat strength attacking across the river.
+(3) Snow plots cost 2 MPs to cross.
+(4) Jungle plots cost 3 Mps to cross
+(5) Marsh plots cost 4 Mps to cross
+(6) Land-based aircrafts CANNOT rebase to an aircraft carrier. While carrier-based aircrafts or missiles CANNOT rebase to a city or a military airbase. 
+
+
+
+   6-2. Militia & Specialized Military Units
+* In this mod, the military units can be classified into two classes: militia and regular army. 
+* Militia units don’t cost manpower to build and their maintenance cost is cheap.
+* Regular army units have much better combat strength and unique abilities. They are the main force of your armed forces. However they are expensive and cost Manpower to build. They must be built in cities with certain military production buildings. e.g. Tanks must be built in cities with Arsenal. 
+
+* Militia & Workers: 
+(1) Militia units are actually “armed workers”. Your worker can transfer into a militia unit of its era by simply clicking "To Arms!" button in the unit command panel. However, the militia transferred from workers will have no starting experience. 
+(2) On the contrary, your militia unit can transfer into a worker by clicking “Demobilize” button. It will lose all of its earned experience.
+(3) Militia units are not professional army, thus they have a weak combat strength and penalties fighting outside friendly territory. Do NOT use them for your force of invasion.
+(4) However, they are very cheap and have combat bonus fighting inside friendly territory and they can heal surrounding units, which makes them great guerilla units, garrison units and logistical units. 
+(5) Militia can build a Citadel on and plot as a fixed point-defense, which can provide surveillance and attack enemy units passing by, or even deploy aircrafts on its plot.
+(6) Workers cannot be captured, it will be KILLED if caught in combat.
+(7) There is no Workboat in this mod. Water improvements can be built by embarked workers.  
+
+* Green-water Navy
+(1) Green-water Navy Units are actually “naval militias”. However they cannot transfer from or to workers. 
+(2) They are smaller ships which cannot enter the deep ocean and much cheaper comparing to blue-water navy units. Thus they can patrol to protect your Coastal Economic Zone.
+
+
+* Specialized Military Units
+There are different kinds of regular army units with highly specialized abilities. Although they have different combat strength, available promotions, building cost and maintenance cost, there is no “weak” unit or “strong” unit. They just do their profession and only coordination can bring you the victory. 
+
+(1) Land Forces:
+* Infantry
+* Counter Units
+* Heavy Mounted Units –> Armored Units
+* Land Hit-and-run Units -> Helicopters
+* Archery Units –> Anti-air Units
+* Siege Weapons
+* Heavy Artillery Weapons
+* Recon Units
+* Special Forces
+* Citadel Units
+
+(2) Navy:
+* Naval Melee Units
+* Naval Hit-and-run Units -> Submarines
+* Naval Ranged Unties
+* Battleships
+* Aircraft Carriers 
+* Naval Exploration Units
+
+(3) Air Force:
+* Air Superiority Fighters
+* Attack Aircrafts
+* Strategic Bombers
+
+(4) Nuclear Weapons:
+* Atomic Bomb -> Nuclear Missile
+* ICBM
+* EMP missile
+
+Please look for detailed information in game. All units have very detailed descriptions on their related Civilopedia pages. You may also find a brief info by hovering your mouse on their “Property” (a special promotion with red icon) in the promotions panel. 
+
+
+
+   6-3. Elite Units & Experiential Units
+* In this mod, you are allowed to command many unique legendary elite units in real history or build experimental units beyond your imagination.
+* To train or build Elite Units & Experiential Units, you must finish their corresponding project. E.g. to build the RAH-66 Comanche, you must finish the Light Helicopter Experimental Program. 
+
+* Like world wonders, Elite Units & Experiential Units are unique. Other than having a name with special yellow letters, only the Civ who finish the corresponding project first in the world are allowed to build them. Some extremely powerful Elite Units & Experiential Units are only to build one at a time. 
+* Most Elite Units & Experiential Units are not allowed to be purchased by Gold.
+* If Elite Units & Experiential Units are killed in combat, don’t worry. You can rebuild them unless they are obsolete. 
+* Elite Units & Experiential Units are extremely powerful or have unrivaled abilities, they are not invincible and can stilled be outnumbered and overwhelmed by enemy's counter units. They should always work with ordinary units with a flexible battle plan to make sure that they can always show up in the right time and the right place.
+
+* The list of Elite Units & Experiential Units in this mod:
+(1) Land:
+* The 300 Spartans (Elite Infantry)
+* Numidian Cavalry (Elite Light Cavalry)
+* Longbowman (Elite Archer)
+* Landsknecht (Elite Mercenary)
+* Xuan Jia Jun (Elite Rider)
+* Hwacha (Prototype Multiple Rocket Launcher)
+* Ski Infantry (Elite Infantry)
+* Land Ironclad (Experimental Steam-powered Vehicle)
+* Big Bertha (Super Howitzer)
+* Cossack Militia (Elite Militia)
+* Elite Sniper (Elite Guerrilla Unit)
+* Panzer VIII Maus (Super-heavy Tank)
+* XM2001 Crusader (Prototype SPG)
+* Weishi Rockets (Elite Long Range Multiple Rocket Launcher)
+* Task Force 141 (Elite Special Forces)
+* Giant Death Robot
+
+(2) Sea:
+* Zheng He's Fleet (Elite Naval Exploration Fleet)
+* Yamato (Super Battleship)
+* The Nautilus (Prototype Submarine)
+* Bismarck (Super Battleship)
+* Hydra (Prototype Underwater Carrier)
+* Proton Collider Vessel
+
+(3) Air:
+* Zeppelin (Airship Carrier)
+* Horten Ho 229 (Prototype Stealth Bomber)
+* SR71 "Black Bird" (Strategic Reconnaissance Aircraft )
+* RAH-66 Comanche (Prototype Stealth Helicopter)
+* PAK FA T-50 (Prototype Strategic Fighter)
+
+(4) Special
+* Tsar Bomba (Experimental Atomic Bomb)
+* Kondensator (Experimental Nuclear Artillery)
+* Davy Crockett (Experimental Nuclear Rocket Launcher)
+* Super Hacker
+
+
+   6-4. War Casualties
+
+* War will cause population loss, especially a long and brutal war. 
+* Every two units KIAs will cause one city in your empire to lose one citizen in a random city. You will get a notice when you have a population loss.  
+* As a result, the larger empires can suffer more war casualties since they have more cities to compensate the loss.
+* You should try your best to avoid unnecessary casualties. On the other hand, if you destroy many of your enemy’s units, your enemy will suffer significant loss even you don’t invade its territory. 
+
+* The Centralization Policy in Tradition can reduce the population loss rate by 33% (3 KIAs cause one population loss). 
+* Some units with “Cause Half Casualties” promotion, such as Counter Units and Militia Units. only count as 0.5 when get killed (4 KIAs cause one population loss)
+* Some special mercenary units, such as Landsknecht, with “Free from Body Count” promotion will never cause population loss when get killed.
+* The best way to get rid of War Casualties is NOT to war. We have many alternative ways to win without killing people.
+
+
+
+   6-5. Nuclear Winter
+
+* If there are too many nuclear detonations in the game, the nuclear winter will fall. When the nuclear winter gets to its worst condition, nobody can win this game.
+* Nuclear detonations will spread fallout over tiles on the map. After 0.5% of the tiles of the whole map are covered by fallout, the nuclear winter event will be triggered.
+
+* There are four stages in the nuclear winter. It will get to the next stage if more nuclear weapons are launched. 
+
+(1) Nuclear Winter Warning - The proportion of Fallout tiles: 0.5%- 1%. You will receive a warning if more nuclear weapons are detonated. 
+(2) Nuclear Winter Strikes - The proportion of Fallout tiles: 1%- 5%. All tiles with Food Output larger than 3 will reduce by 1 for every new nuclear detonation, until it reaches 3. This will slow down the population growth in all cities. 
+(3) Nuclear Winter Deteriorates - The proportion of Fallout tiles: 5%- 10%. All tiles with Food Output will reduce by 1 for every new nuclear detonation, until it reaches 1. This will leads to global famine. 
+(4) Nuclear Winter Apocalypse - The proportion of Fallout tiles > 10%. All tiles' Food and Production output will reduce to 0 with new nuclear detonations. All survivors will starve to death. The global productivity is backed to the Stone Age.
+
+* Unfortunately, the nuclear winter is an irreversible process. Once happened, the climate can never be restored. However, there is still ways to prevent it.
+(1) One nuclear explosion cannot cause the nuclear winter, only a global nuclear war can be strong enough to make it happen. Since the event is triggered by calculating the total number of fallout tiles of the map, many nuclear detonations within a limited area (kinds of nuclear tests) won’t cause the nuclear winter.
+(2) You can slow down the nuclear winter process by scrubbing out the fallout tiles or using Anti-Fallout Satellite. This will stop it from entering to the next stage but cannot restore it to its previous condition. 
+(3) The best way to prevent the nuclear winter is to stop the nuclear warfare - the Nuclear Non-Proliferation is very important. 
+(4) If the nuclear winter gets to its worst condition, it will be the end of the human civilizations. However, you still have a little chance to win: waiting for a cultural or diplomatic, or even time victory and it should be less than 10 years.
+
+
+
+
+
+
+7. Automated Management & Batch Operations
+
+7-1. Automated Cities & Unit Group Control
+
+* Your cities can choose their own building tasks by set to “Automated” mode. Therefore, you can free yourself from so many clicks in one turn if you have more than 30 cities.
+
+* Check the “Automated” checkbox under the “Show Queue” checkbox under the Production List. It will automatically schedule its future production queue. 
+* If this city is already assigned a production mission, it will become autonomous after finishing its current production queue. 
+* You can still change its production queue anytime like adding or removing items in the queue, which is very important. The AI is not as smart as you. You'd better keep an eye on these autonomous cities in case they start to build something you don't want.
+
+* In this mod, you can control a group of units to move together like a RTS game to save your time and energy if you have many units moving to the same location.
+
+* Follow these steps to perform a Grouped Units Movement (Move up to 12 units within one hex radius)
+(1) Select the unit in the middle of all units you want to move.
+(2) Click the button:” Grouped Units Movement” on the unit command panel.
+(3) A special Promotion: “Group Movement” will be assigned to this unit and all adjacent units to indicate that they are in one group.
+(4) Then move this unit to the location you want. Each adjacent military units will follow up. They will also use roads and railroads on their way.
+(5) If the destination area is too small, the formation of all units will be broken and some units may move to the nearest valid location instead of the destination area.
+(6) 	The unit and all following unit will continue moving in the next turn if they cannot reach the destination in one turn.
+
+* Follow these steps to perform a Stacked Units Movement (Move two stacked units in the same plot together)
+(1) Select one of the two stacked unit. 
+(2) Click the button: “Stacked Units Movement” on the unit command panel.
+(3) A special Promotion: Group Movement will be assigned to this unit and the other unit in the same plot indicate that they are in one group.
+(4) Then move this unit to the location you want. The other unit will follow up. It will also use roads and railroads on their way.
+(5) The following unit will continue moving in the next turn if it cannot reach the destination in one turn. So if you order two units with different Movements, the slower one will fall behind for a moment.
+
+* Be aware those two orders are only designed for quickly moving your troops, especially large naval forces, in the safe areas. DO NOT use this order in the frontline since the formation may be broken and make your units vulnerable for enemy's attacks!
+
+* If you changed your mind, or just did a wrong click and want to cancel the Group Movement or Stacked Units Movement order. Click the button: “Ungroup” on the unit command panel. All Group Movement Promotion assigned to your units will be removed.
+
+7-2. Batch Operations for Production and Unit Commands
+
+* Want to maximize the production of your nation to win an International Project? Batch Operations will free you from clicking into all cities and change the focus and production task manually.
+
+* Copy the production order to all cities:
+(1) Choose a random city and change its current production order to the one you want. 
+(2) Click “Copy Production Order” below the Citizen Management panel. 
+(3) Then all cities available to do this task will change their current task instantly!
+(4) For certain buildings or units which require a Prerequisite Building in the city, only the qualified cities with the required building will receive this order. Otherwise they will continue with their current order.
+(5) Once this order is finished, each city will continue their previous production queue. 
+
+* Copy the Citizen Focus to other cities:
+(1) Choose a random city and change its current Citizen Focus to the one you want. 
+(2) Click “Copy Citizen Focus” below the Citizen Management panel. 
+(3) All cities will change their citizen focus instantly!
+(4) You can check the city’s current citizen focus on the city’s banner in the map. An icon will indicate its current focus. If the city’s Specialists Slots are manually controlled, there will be a “Checkbox” icon shown on the city’s banner.
+
+* You can also clear the production queue of ALL cities by clicking the button: “Clear All Orders” below those tow buttons. This action cannot undo.
+
+
+* Apart from global batch operations, you can also use batch order to fill all Specialists Slots in one click. You no longer need to click the slot one by one.
+(1) Check the checkbox “Manual Specialist Control” below the “Specialist Buildings” Tag in your desired city. Otherwise the one-click-fill buttons won’t show up.
+(2) Click the certain button you need to fill all available slots of a specialists in this city. e.g. Click the “Fill all Scientists Slots”, which will instantly fill all available Scientists Slots in this city. 
+
+
+* If you have hundreds of units waiting for your orders. It is highly recommended that you use the batch operation to finish your job in one click.
+* Upgrade All units in one click:
+(1) Click the button “Upgrade ALL UNITS” on the unit command panel when the selected unit is upgradeable. 
+(2) Then all of your units which can upgrade right now will upgrade.
+(3) You must have enough Gold and Strategic Resourcesresources for all of them to upgrade in one turn. Otherwise some units will NOT upgrade. 
+(4) Only the units inside your border will upgrade. 
+
+* Put all units into “idle mode” in one click:
+(1) Click the button “Order ALL UNITS” on the unit command panel anytime.
+(2) All of units waiting for orders will automatically do what they should do.
+* Infantry Units and Counter Units: fortify
+* Mobile Units, Ranged Units and Naval Units: Alert. 
+* Fighters: Intercept. (If HP less than 30, it will stop intercepting and heal) 
+* Others (Bombers, Missiles, etc): Sleep.
+(3) Be aware that you may “forget” some units if you use this order too often. However, if you always want to use this batch operation, your Civ should be strong enough and there is no need to worry about a single unit. 
+
+
+
+
+8. Known Bugs & Future Plans
+
+* This mod is still in its Beta version. I’m sorry if you encounter any possible Bugs. Please help me to improve this mod’s quality by reporting the bug by submitting the logging files and the saved files.
+
+* Known Bugs: 
+(1) 12 kb corrupted saved file & CTD: In is version, it is very rare during our alpha testing. If you encounter, please report with your logging files rather than “it crashes”. 
+(2) Possible CTD when clicking “restart game” or loading a saved game repeatedly. This may be solved in future DLC version.
+(3) Embarked land units have a “modern cargo ship” model. This is just a visual issue and won’t affect the game mechanism. 
+(4) Sometimes the notice of special combat de-buffs like “sunder” or “barrage” will not show up.
+(5) Sometimes you cannot upgrade stacked units using “Upgrade ALL UNITS” in one click. Please click again and they should upgrade this time. 
+(6) If there is no effect after applying a new policy, please wait till the next turn for its effectiveness.
+(7) Some old maps may not be supported and will cause “no strategic resources in the whole map”, such as the old “Earth map” offered by BNW itself. Because the map generation codes are changed in this mod.  
+(8) Ai have many cheating methods or assistance to help them with their poor intelligence. So don’t be surprised that you find AI suddenly upgrade their railroads, repair all pillaged improvements, breed fishes, drill natural gas, or other “weird behaviors” in their territory. 
+(9) AI may have their carrier-based aircrafts or missiles deploy in their cities but they will be put into correct positions in the next turn.
+(10) The paperwork is huge, there may be some wrong description, grammar mistakes or leftovers in Civilopedia texts or even in this Quickstart Guide. Please point it out if you find them.
+
+
+
+* Future Plans
+(1) The final and the stable version of this mod will be v6.0. Some versions may be released to fix Bugs or tweak minor balance issues. NO major changes in the future! 
+(2) The v6.0 will be released in both MOD and DLC versions.
+(3) A “MOD Option” will be available in the future versions to allow the player to turn on/off some mod mechanism like Electricity, immigration, nuclear winter and so on.
+(4) New elements will be edited to this Quickstart Guide (images, links) in the next version. A detailed Tutorial Book may be released in the future.
+
+
+
+
+
+
+
+
+9. Special Thanks
+
+* If I miss someone or in the list, or you have copyright issues, sorry for that and please contact me.
+
+
+* DLL: 
+   whoward69 for DLL - Various Mod Components
+   
+* EUI: 
+   bc1 for EUI elements
+   
+* New Luxury Resources: 
+   Barathor for More Luxuries MOD
+   
+* Coding: 
+Gedemon for RED Events, flags for stacked units, aircraft animation speed and ranged units counterattack related codes
+CaptainCWB for codes optimization and UI elements
+Tokata for additional DLL editing, Civilopedia and UI elements
+   Barathor for AssignStartingPlots.lua, Map Setup.lua
+Maximus for new attack effects (AoE damage) related codes and combat UI related codes
+Machiavelli24 for Reform and Rule related codes and Policy_FreeBuildingClass.lua
+Ninakoru for Smart AI related codes
+FramedArchitect for Faerun Fantasy Mod and Global Warming MOD related codes
+Redox for Light Touch: unit automation related codes
+Coban for helicopter hovering related codes
+Hulfgar for Hulfgars Industrial Warfare related codes and concept
+far_away_land for Settler joining city codes & some debugging tasks
+bc1 for backgroud image Lua codes
+
+
+* 3d Models
+Wolfdog for many modern and renaissance units’ models
+Snafusmith for many modern and ancient units’ models
+Danrell for many WWII units’ models
+Danrell, Nutty for MiG-15 model
+Ekmek, asioasioasio for UAV model
+Ekmek, KnelRivendare, Jinzor for B52 model
+bernie14 for templar and teutonic mounted knights models
+Barathor for new resource models&icons
+other 3d units models: Wolfdog, Snafusmith, Danrell, Ekmek, asioasioasio, KnelRivendare, Jinzor, bernie14, Barathor, Snafusmith(Smitty), JTitan,Deliverator, Walter Hawkwood, Refar, Patum333, hangman, Deliverator, BouncyMischa
+
+* Icon/ Visual Art Elements
+Icons & Images: Barathor, JanBoruta, Jamie Meyer, Moriboe, sukritact, Pouakai, Sukritact, Envoy (@fourfourhero), Pouakai, zsofiadome, BlackFeather_, Empoh, Tokata, Institute of Swedish Safety; Security, freepik.com, iranaware.com, photobucket.com, Brainbug's Egyptian Army (Retextured) von Brainbug (v1.0), calxibe.com, wallpoper.com
+JanBoruta for some units and building icons
+BlackFeather_ for Spanish Armada icon and Super Power MOD Logo
+Moriboe, sukritact, Pouakai, Sukritact, Envoy (@fourfourhero), Pouakai for some new buildings and new wonders icons and concept
+
+* Languages
+Chinese: MarbleGargoyle, LI, Seven
+
+* Promotion & Test: 
+Tokata, Ben, Dante, BlackFeather_, GanJunWuDi, 38AA, HJQ, xiaofeng, seraph, Li, Seven, Xingen, Tianshu, SkyWalker, Arno, bot, ryst
+
+* Proofreading & Document Editing: 
+爱玲的安逸人生, Seven
+
+* Cited Documents:
+Wikipedia, www.azquotes.com , www.brainyquote.com
+
+* A few images or concepts are from those works:
+ACE Combat (published by Namco Bandai Games and produced by Project Aces)
+Call of Duty: Modern Warfare (published and owned by Activision)
+World of Warships and World of Tanks (Wargaming) 
+Command &amp; Conquer: Red Alert 3 (Electronic Arts)
+Cities XL 2012 (Focus Home Interactive)
+Others from Google Images Search
+
+* “Clash of Civilizations” is inspired by political scientist Samuel P. Huntington’s The Clash of Civilizations and the Remaking of World Order, published in 1996
+
+* The names of unique national wonders “Ministry of Truth”, “Ministry of Plenty” and “Ministry of Peace” are inspired by English author George Orwell’s Nineteen Eighty-Four, published in 1949.
+
+
+
+
+
+
+
+
+
+
